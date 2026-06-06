@@ -3,13 +3,13 @@
 /* ============================= */
 /* COLOR DEFINITIONS (RETRO-CP)  */
 /* ============================= */
-@define-color cp-black   #000000;
+@define-color cp-black   #131317;
 @define-color cp-red     #C14F3D;
 @define-color cp-orange  #E5A359;
 @define-color cp-green   #7B9C73;
 @define-color cp-gray    #BDBDBD;
 @define-color cp-cream   #E6E1D3;
-@define-color cp-dark    #1A1A1A;
+@define-color cp-dark    #131317;
 
 /* ============================= */
 /* GLOBAL RESET */
@@ -64,13 +64,18 @@ window#waybar {
   border-radius: 2px;
 }
 
+#custom-clock-jp {
+  background-color: @cp-dark;
+  color: @cp-cream;
+  font-weight: normal;
+}
 /* ============================= */
 /* WORKSPACES */
 /* ============================= */
 
 #workspaces button {
   font-family: "IPAexGothic", "IPAexMincho", sans-serif;
-  margin: 0 2px 0 0;
+  margin: 0 7px 0 7px;
   padding: 0 4px;
   border-radius: 2px;
   background-color: @cp-dark;
@@ -99,8 +104,8 @@ window#waybar {
 /* ============================= */
 
 #window {
-  background-color: @cp-cream;
-  color: @cp-black;
+  color: @cp-cream;
+  background-color: @cp-dark;
 }
 
 #custom-omarchy {

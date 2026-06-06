@@ -14,7 +14,6 @@
 
   "modules-left": [
     "custom/omarchy",
-    "custom/weather",
     "hyprland/workspaces",
     "custom/screenrecording-indicator",
     "custom/updatespacman",
