@@ -1,0 +1,90 @@
+configuration {
+  modi: "drun,run";
+  show-icons: true;
+  drun-display-format: "{name}";
+  terminal: "foot";
+  hover-select: true;
+}
+
+* {
+  font: "Liberation Sans 14";
+  bg: #10141cff;
+  bg-alt: #171d28ff;
+  fg: #edf2f7ff;
+  muted: #94a3b8ff;
+  accent: #7dd3fcff;
+  selected: #f59e0bff;
+  urgent: #fb7185ff;
+}
+
+window {
+  width: 40%;
+  border: 1px;
+  border-color: @accent;
+  border-radius: 8px;
+  background-color: @bg;
+}
+
+mainbox {
+  children: [inputbar, listview];
+  spacing: 14px;
+  padding: 18px;
+  background-color: transparent;
+}
+
+inputbar {
+  padding: 12px 14px;
+  //border-radius: 12px;
+  background-color: @bg-alt;
+  text-color: @fg;
+}
+
+prompt {
+  text-color: @accent;
+  padding: 0 10px 0 0;
+}
+
+entry {
+  text-color: @fg;
+  placeholder: "Search";
+  placeholder-color: @muted;
+}
+
+listview {
+  lines: 8;
+  columns: 1;
+  spacing: 8px;
+  background-color: transparent;
+}
+
+element {
+  padding: 5px 5px;
+  margin: 0px;
+  //border-radius: 12px;
+  background-color: red;
+  //text-color: @muted;
+}
+
+element normal.active,
+element alternate.active {
+  text-color: @fg;
+}
+
+element selected normal {
+  background-color: @bg-alt;
+  text-color: @fg;
+}
+
+element-icon {
+  size: 1.05em;
+  margin: 0 12px 0 0;
+}
+
+element normal normal {
+  background-color: transparent;
+  text-color: @muted;
+}
+element alternate normal {
+   background-color: transparent;
+   text-color: @muted;
+ }
