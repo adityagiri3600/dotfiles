@@ -126,10 +126,10 @@ window#waybar {
   color: @cp-cream;
 }
 
-/* System Stats */
-#battery {
-  background-color: @cp-green;
-  color: @cp-black;
+/* Right modules - White text, no backgrounds */
+#network, #pulseaudio, #bluetooth, #custom-battery {
+  background-color: transparent;
+  color: @cp-cream;
 }
 
 #memory {
@@ -137,22 +137,7 @@ window#waybar {
   color: @cp-black;
 }
 
-#network {
-  background-color: @cp-green;
-  color: @cp-black;
-}
-
-#pulseaudio {
-  background-color: @cp-red;
-  color: @cp-black;
-}
-
 #backlight {
-  background-color: @cp-gray;
-  color: @cp-black;
-}
-
-#bluetooth {
   background-color: @cp-gray;
   color: @cp-black;
 }
@@ -197,4 +182,98 @@ tooltip label {
 #custom-idle-indicator.active,
 #custom-notification-silencing-indicator.active {
   color: #a55555;
+}
+
+/* ============================= */
+/* BATTERY STATES & ANIMATIONS   */
+/* ============================= */
+
+#custom-battery.good {
+  color: @cp-cream;
+}
+
+#custom-battery.warning {
+  color: @cp-orange;
+  animation: pulse-warning 1.5s ease-in-out infinite;
+}
+
+#custom-battery.critical {
+  color: @cp-red;
+  animation: pulse-critical 0.5s ease-in-out infinite;
+}
+
+#custom-battery.full {
+  color: @cp-cream;
+}
+
+#custom-battery.plugged {
+  color: @cp-orange;
+  animation: pulse-charging 1s ease-in-out infinite;
+}
+
+#custom-battery.battery-1 {
+  background-image: url("file:///home/aditya/dotfiles/waybar/icons/battery/battery-1.png");
+  color: @cp-cream;
+}
+
+#custom-battery.battery-2 {
+  background-image: url("file:///home/aditya/dotfiles/waybar/icons/battery/battery-2.png");
+  color: @cp-cream;
+}
+
+#custom-battery.battery-3 {
+  background-image: url("file:///home/aditya/dotfiles/waybar/icons/battery/battery-3.png");
+  color: @cp-cream;
+}
+
+#custom-battery.charging {
+  background-image: url("file:///home/aditya/dotfiles/waybar/icons/battery/charge.png");
+  color: @cp-orange;
+  animation: pulse-charging 1s ease-in-out infinite;
+}
+
+#custom-battery.full {
+  background-image: url("file:///home/aditya/dotfiles/waybar/icons/battery/full.png");
+  color: @cp-cream;
+}
+
+#custom-battery.low {
+  background-image: url("file:///home/aditya/dotfiles/waybar/icons/battery/low.png");
+  color: @cp-orange;
+  animation: pulse-warning 1.5s ease-in-out infinite;
+}
+
+#custom-battery.critical {
+  background-image: url("file:///home/aditya/dotfiles/waybar/icons/battery/low.png");
+  color: @cp-red;
+  animation: pulse-critical 0.5s ease-in-out infinite;
+}
+
+#custom-battery.battery-1,
+#custom-battery.battery-2,
+#custom-battery.battery-3,
+#custom-battery.charging,
+#custom-battery.full,
+#custom-battery.low,
+#custom-battery.critical {
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 32px;
+  /* filter: invert(1); */
+}
+
+@keyframes pulse-charging {
+  from { opacity: 1; }
+  to { opacity: 0.7; }
+}
+
+@keyframes pulse-warning {
+  from { opacity: 1; }
+  to { opacity: 0.6; }
+}
+
+@keyframes pulse-critical {
+  from { color: @cp-red; }
+  to { color: @cp-black; }
 }

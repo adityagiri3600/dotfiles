@@ -31,7 +31,7 @@
     "bluetooth",
     "pulseaudio",
     "network",
-    "battery"
+    "custom/battery"
   ],
 
   "hyprland/workspaces": {
@@ -138,25 +138,12 @@
     "on-click": "/home/aditya/.local/bin/omarchy-launch-wifi"
   },
 
-  "battery": {
-    "format": "{capacity}% {icon}",
-    "format-discharging": "{icon}",
-    "format-charging": "{icon}",
-    "format-plugged": "",
-    "format-icons": {
-      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
-      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
-    },
-    "format-full": "󰂅",
-    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
-    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
+  "custom/battery": {
+    "exec": "bash /home/aditya/dotfiles/waybar/battery.sh",
     "interval": 5,
-    "on-click": "/home/aditya/.local/bin/omarchy-menu power",
-    "on-click-right": "notify-send -u low \"$(omarchy-battery-status)\"",
-    "states": {
-      "warning": 20,
-      "critical": 10
-    }
+    "return-type": "json",
+    "tooltip": true,
+    "on-click": "/home/aditya/.local/bin/omarchy-menu power"
   },
   "bluetooth": {
     "format": "",
