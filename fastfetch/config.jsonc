@@ -4,10 +4,10 @@
   "logo": {
     "type": "kitty-direct",
     "source": "/home/aditya/Downloads/neofetch_img.png",
-    "width": 50,
+    "width": 40,
     // "height": 16,
     "padding": {
-      "top": 1,
+      "top": 10,
       "right": 0
     }
   },
