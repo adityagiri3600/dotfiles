@@ -65,7 +65,7 @@
 (defwindow data-structures
   :monitor 0
   :exclusive false
-  :focusable none
+  :focusable false
   :geometry (geometry
     :anchor "center"
   )
