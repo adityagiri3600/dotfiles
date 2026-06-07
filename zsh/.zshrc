@@ -5,6 +5,17 @@ SAVEHIST=100000
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
+# Kitty / xterm-style keybindings
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
+
+bindkey '^[[H' beginning-of-line
+bindkey '^[[F' end-of-line
+bindkey '^[[1~' beginning-of-line
+bindkey '^[[4~' end-of-line
+bindkey '^[[7~' beginning-of-line
+bindkey '^[[8~' end-of-line
+
 autoload -Uz colors compinit
 colors
 compinit
