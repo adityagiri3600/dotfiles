@@ -43,13 +43,12 @@ alias ...='cd ../..'
 alias ff='fastfetch'
 alias codex='~/.local/bin/codex-full-access'
 
+PROMPT='%F{39}▶%f '
+RPROMPT=''
+eval "$(starship init zsh)"
+
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-PROMPT='%F{39}▶%f '
-RPROMPT=''
-
-eval "$(starship init zsh)"
 
 . "$HOME/.local/share/swiftly/env.sh"
