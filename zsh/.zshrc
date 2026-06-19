@@ -33,6 +33,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 export EDITOR=vim
+export DOTFILES="$HOME/dotfiles"
 
 alias ls='ls --color=auto'
 alias ll='ls -lah'
