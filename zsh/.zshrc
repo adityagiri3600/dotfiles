@@ -51,3 +51,4 @@ RPROMPT=''
 
 eval "$(starship init zsh)"
 
+. "$HOME/.local/share/swiftly/env.sh"
