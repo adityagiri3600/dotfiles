@@ -1,4 +1,4 @@
-@import "../omarchy/current/theme/waybar.css";
+@import "/home/aditya/.config/omarchy/current/theme/waybar.css";
 
 /* ============================= */
 /* COLOR DEFINITIONS (RETRO-CP)  */
@@ -212,39 +212,39 @@ tooltip label {
 }
 
 #custom-battery.battery-1 {
-  background-image: url("file:///home/aditya/dotfiles/waybar/icons/battery/battery-1.png");
+  background-image: url("file:///home/aditya/.config/waybar/icons/battery/battery-1.png");
   color: @cp-cream;
 }
 
 #custom-battery.battery-2 {
-  background-image: url("file:///home/aditya/dotfiles/waybar/icons/battery/battery-2.png");
+  background-image: url("file:///home/aditya/.config/waybar/icons/battery/battery-2.png");
   color: @cp-cream;
 }
 
 #custom-battery.battery-3 {
-  background-image: url("file:///home/aditya/dotfiles/waybar/icons/battery/battery-3.png");
+  background-image: url("file:///home/aditya/.config/waybar/icons/battery/battery-3.png");
   color: @cp-cream;
 }
 
 #custom-battery.charging {
-  background-image: url("file:///home/aditya/dotfiles/waybar/icons/battery/charge.png");
+  background-image: url("file:///home/aditya/.config/waybar/icons/battery/charge.png");
   color: @cp-orange;
   animation: pulse-charging 1s ease-in-out infinite;
 }
 
 #custom-battery.full {
-  background-image: url("file:///home/aditya/dotfiles/waybar/icons/battery/full.png");
+  background-image: url("file:///home/aditya/.config/waybar/icons/battery/full.png");
   color: @cp-cream;
 }
 
 #custom-battery.low {
-  background-image: url("file:///home/aditya/dotfiles/waybar/icons/battery/low.png");
+  background-image: url("file:///home/aditya/.config/waybar/icons/battery/low.png");
   color: @cp-orange;
   animation: pulse-warning 1.5s ease-in-out infinite;
 }
 
 #custom-battery.critical {
-  background-image: url("file:///home/aditya/dotfiles/waybar/icons/battery/low.png");
+  background-image: url("file:///home/aditya/.config/waybar/icons/battery/low.png");
   color: @cp-red;
   animation: pulse-critical 0.5s ease-in-out infinite;
 }

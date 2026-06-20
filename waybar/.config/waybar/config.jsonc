@@ -13,7 +13,6 @@
   "height": 24,
 
   "modules-left": [
-    "custom/omarchy",
     "hyprland/workspaces",
     "custom/screenrecording-indicator",
     "custom/updatespacman",
@@ -58,13 +57,6 @@
     }
   },
 
-  "custom/omarchy": {
-    "format": "  ",
-    "on-click": "/home/aditya/.local/bin/omarchy-menu",
-    "on-click-right": "/home/aditya/.local/bin/xdg-terminal-exec",
-    "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
-  },
-
   "custom/update": {
     "format": "",
     "exec": "/home/aditya/.local/bin/omarchy-update-available",
@@ -87,31 +79,15 @@
 
   "hyprland/window": {
     "format": "{title} - {class}",
-    "max-length": 20,
+    "max-length": 100,
+    "icon": true,
     "rewrite": {
-      " - ": "",
-      "(.*?) - Chromium - chromium": "   $1 ",
-      "(.*chrome)...(.*)": "   $1 ",
-      "(.*) - Obsidian - .* - obsidian": "   $1 ",
-      "(.*nvim)...(.*)": "   $2 ",
-      "(.*code) - (.*)": " 󰨞  $1 ",
-      "^.*btop( .*|$)": " 󰧨 BTOP $1 ",
-      "^.*cmatrix( .*|$)": " 󰘨 MATRIX $1 ",
-      "(.*) - Spotify": "  $1 ",
-      "(.*) - com.mitchellh.ghostty": " 󰊠 $1 ",
-      "(.*) - Alacritty": "   $1 ",
-      "(.*) - BeeperTexts": " 󰻞  $1 ",
-      "(.*Discord)...(.*).. (.*)": "   $2 ",
-      "(.*) - org.gnome.Nautilus": " 󰣆  $1 ",
-      "(.*) - fish": "   [$1] ",
-      "(.*Steam)...(.*)": "   $1",
-      "(.*imv)...(.*).. (.*)": "   $2",
-      "(.*) - com.obsproject.Studio": "  $1 "
+      "(.*?) .*Zen.*":  "$1 ",
     }
   },
 
   "custom/clock-jp": {
-    "exec": "bash /home/aditya/dotfiles/waybar/clock-jp.sh",
+    "exec": "bash /home/aditya/.config/waybar/clock-jp.sh",
     "interval": 60,
     "return-type": "json",
     "tooltip": true,
@@ -127,7 +103,7 @@
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "format": "{icon}",
-    "format-wifi": "{icon}",
+    "format-wifi": "{icon}   {essid} {bandwidthDownBytes}↓ {bandwidthUpBytes}↑",
     "format-ethernet": "󰀂",
     "format-disconnected": "󰖪",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
@@ -139,7 +115,7 @@
   },
 
   "custom/battery": {
-    "exec": "bash /home/aditya/dotfiles/waybar/battery.sh",
+    "exec": "bash /home/aditya/.config/waybar/battery.sh",
     "interval": 5,
     "return-type": "json",
     "tooltip": true,
@@ -154,8 +130,8 @@
   },
 
   "pulseaudio": {
-    "format": "{icon}",
-    "on-click": "omarchy-launch-or-focus-tui wiremix",
+    "format": "{icon}  {volume}%",
+    "on-click": "pavucontrol",
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
     "scroll-step": 5,

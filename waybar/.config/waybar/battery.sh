@@ -38,7 +38,7 @@ case "$STATUS" in
     ;;
   "Full"|"Not charging")
     class="full"
-    text="Full"
+    text=" "
     ;;
 esac
 
