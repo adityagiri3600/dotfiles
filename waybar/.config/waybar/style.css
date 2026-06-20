@@ -45,8 +45,8 @@ window#waybar {
 .modules-left,
 .modules-center,
 .modules-right {
-  background-color: @cp-black;
-  border: 5px solid @cp-black;
+  background-color: @cp-dark;
+  border: 5px solid @cp-dark;
   border-radius: 5px;
 }
 
