@@ -9,9 +9,8 @@
     "editor.scrollbar.horizontal": "hidden",
     "terminal.integrated.fontFamily": "'Hack', 'Symbols Nerd Font', monospace",
 
-    "window.customTitleBarVisibility": "windowed",
     "window.titleBarStyle": "native",
-    "window.menuBarVisibility": "compact",
+    "window.menuBarVisibility": "hidden",
     "window.commandCenter": false,
 
     "workbench.colorTheme": "One Dark Pro Monokai Darker",
