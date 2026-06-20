@@ -21,11 +21,12 @@
   ],
 
   "modules-center": [
-    "custom/clock-jp"
+    "custom/clock-jp",
   ],
-
+  
   "modules-right": [
     "tray",
+    "mpris",
     "cpu",
     "bluetooth",
     "pulseaudio",
@@ -92,6 +93,31 @@
     "return-type": "json",
     "tooltip": true,
     "on-click-right": "/home/aditya/.local/bin/omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
+  },
+
+    "mpris": {
+    "format": "{status_icon} {artist} - {title}",
+    "format-paused": " {artist} - {title}",
+    "format-stopped": "",
+    "tooltip-format": "{player} - {album}",
+    "artist-len": 20,
+    "title-len": 35,
+    "dynamic-len": 60,
+    "status-icons": {
+      "playing": "",
+      "paused": "",
+      "stopped": ""
+    },
+    "player-icons": {
+      "default": "",
+      "spotify": "",
+      "firefox": "",
+      "chromium": "",
+      "vlc": "󰕼"
+    },
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-click-middle": "playerctl previous"
   },
 
   "cpu": {

@@ -69,6 +69,12 @@ window#waybar {
   color: @cp-cream;
   font-weight: normal;
 }
+
+#mpris {
+  background-color: @cp-gray;
+  color: @cp-black;
+  font-size: 13px;
+}
 /* ============================= */
 /* WORKSPACES */
 /* ============================= */

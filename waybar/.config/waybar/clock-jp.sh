@@ -7,4 +7,4 @@ weekday=${kanji[w]}
 time=$(date +%H:%M)
 tooltip=$(date +"%d/%m/%Y  %H:%M:%S")
 
-printf '%s\n' "{\"text\":\"<span size='12000'>${time}</span>               <span size='16000'>${weekday}</span>\",\"tooltip\":\"<span>${tooltip}</span>\"}"
+printf '%s\n' "{\"text\":\"<span size='12000'>${time}</span>  <span size='16000'>${weekday}</span>\",\"tooltip\":\"<span>${tooltip}</span>\"}"
