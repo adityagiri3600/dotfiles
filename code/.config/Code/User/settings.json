@@ -1,6 +1,6 @@
 {
     "vscode_custom_css.imports": [
-        "file://${env:DOTFILES}/dotfiles/code/customCSS.css"
+        "file://${env:DOTFILES}/code/.config/Code/User/customCSS.css"
     ],
 
     "editor.minimap.enabled": false,
