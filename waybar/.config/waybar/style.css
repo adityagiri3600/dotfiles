@@ -3,13 +3,13 @@
 /* ============================= */
 /* COLOR DEFINITIONS (RETRO-CP)  */
 /* ============================= */
-@define-color cp-black   #131317;
+@define-color cp-black   rgba(0,0,0,1);
 @define-color cp-red     #C14F3D;
-@define-color cp-orange  #E5A359;
+@define-color cp-orange  #df7a33;
 @define-color cp-green   #7B9C73;
 @define-color cp-gray    #BDBDBD;
 @define-color cp-cream   #E6E1D3;
-@define-color cp-dark    #131317;
+@define-color cp-dark    rgba(0,0,0,0);
 
 /* ============================= */
 /* GLOBAL RESET */

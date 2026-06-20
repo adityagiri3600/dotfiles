@@ -8,8 +8,8 @@ configuration {
 
 * {
   font: "Liberation Sans 14";
-  bg: #10141cff;
-  bg-alt: #171d28ff;
+  bg: rgba(0, 0, 0, 0.5);
+  bg-alt: rgb(0, 0, 0, 0);
   fg: #edf2f7ff;
   muted: #94a3b8ff;
   accent: #7dd3fcff;
@@ -18,8 +18,9 @@ configuration {
 }
 
 window {
+  transparency: "real";
   width: 40%;
-  border: 1px;
+  border: 0px;
   border-color: @accent;
   border-radius: 8px;
   background-color: @bg;
