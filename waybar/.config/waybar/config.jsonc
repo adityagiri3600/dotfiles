@@ -137,7 +137,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "spacing": 1,
-    "on-click": "/home/aditya/.local/bin/omarchy-launch-wifi"
+    // "on-click": "/home/aditya/.local/bin/omarchy-launch-wifi"
   },
 
   "custom/battery": {
@@ -152,7 +152,7 @@
     "format-disabled": "󰂲",
     "format-connected": "󰂱",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "omarchy-launch-bluetooth"
+    "on-click": "blueman-manager"
   },
 
   "pulseaudio": {
