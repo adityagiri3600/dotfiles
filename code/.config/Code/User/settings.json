@@ -13,7 +13,7 @@
     "window.menuBarVisibility": "hidden",
     "window.commandCenter": false,
 
-    "workbench.colorTheme": "One Dark Pro Monokai Darker",
+    "workbench.colorTheme": "Vesper Black",
     "workbench.startupEditor": "none",
     "workbench.activityBar.location": "hidden",
     "workbench.layoutControl.enabled": false,
