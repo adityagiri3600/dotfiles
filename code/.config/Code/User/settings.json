@@ -7,7 +7,13 @@
     "editor.fontFamily": "'Hack', 'Symbols Nerd Font', monospace",
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.horizontal": "hidden",
+
     "terminal.integrated.fontFamily": "'Hack', 'Symbols Nerd Font', monospace",
+    "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+    "terminal.integrated.shellIntegration.showCommandGuide": false,
+    "terminal.integrated.stickyScroll.enabled": false,
+    "terminal.integrated.shellIntegration.enabled": false,
+    "terminal.integrated.cursorStyleInactive": "none",
 
     "window.titleBarStyle": "native",
     "window.menuBarVisibility": "hidden",
@@ -20,6 +26,7 @@
     "workbench.navigationControl.enabled": false,
     "workbench.browser.showInTitleBar": false,
     "workbench.statusBar.visible": false,
+    "workbench.panel.showLabels": false,
     "workbench.editor.showTabs": "none",
     "workbench.editor.editorActionsLocation": "hidden",
 
