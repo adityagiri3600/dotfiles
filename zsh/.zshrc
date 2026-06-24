@@ -52,4 +52,14 @@ export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-. "$HOME/.local/share/swiftly/env.sh"
+
+# vscode clean outputs
+if [[ "$TERM_PROGRAM" == "vscode" || -n "$VSCODE_PID" ]]; then
+  autoload -Uz add-zsh-hook
+
+  _vscode_clear_before_exec() {
+    printf '\033[H\033[2J\033[3J'
+  }
+
+  add-zsh-hook preexec _vscode_clear_before_exec
+fi
