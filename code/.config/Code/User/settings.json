@@ -25,7 +25,6 @@
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
     "workbench.browser.showInTitleBar": false,
-    "workbench.statusBar.visible": false,
     "workbench.panel.showLabels": false,
     "workbench.editor.showTabs": "none",
     "workbench.editor.editorActionsLocation": "hidden",
@@ -38,6 +37,7 @@
 
     "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true,
+    "code-runner.showExecutionMessage": false,
     "code-runner.executorMapByFileExtension": {
         ".dfy": "cd $dir && dafny verify $fileName && dafny run -t:py $fileName",
         ".m": "cd $dir && gcc $fileName -o $fileNameWithoutExt $(gnustep-config --objc-flags) $(gnustep-config --base-libs) && $dir$fileNameWithoutExt",
@@ -102,7 +102,7 @@
         "typescript": "ts-node",
         "coffeescript": "coffee",
         "scala": "scala",
-        "swift": "swift",
+        "swift": "/usr/bin/swift",
         "julia": "julia",
         "crystal": "crystal",
         "ocaml": "ocaml",
@@ -137,4 +137,5 @@
         "pkl": "cd $dir && pkl eval -f yaml $fileName -o $fileNameWithoutExt.yaml",
         "gleam": "gleam run -m $fileNameWithoutExt"
     },
+    "workbench.statusBar.visible": false,
 }
