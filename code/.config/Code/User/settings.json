@@ -7,6 +7,47 @@
     "editor.fontFamily": "'Hack', 'Symbols Nerd Font', monospace",
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.horizontal": "hidden",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+        {
+            "name": "JSON string values",
+            "scope": [
+            "string.quoted.double.json"
+            ],
+            "settings": {
+            "foreground": "#d5c4c4"
+            }
+        },
+        {
+            "name": "JSON keys",
+            "scope": [
+            "support.type.property-name.json"
+            ],
+            "settings": {
+            "foreground": "#d3a56e"
+            }
+        },
+        {
+            "name": "JSON numbers",
+            "scope": [
+            "constant.numeric.json"
+            ],
+            "settings": {
+            "foreground": "#fab387"
+            }
+        },
+        {
+            "name": "JSON true/false/null",
+            "scope": [
+            "constant.language.json"
+            ],
+            "settings": {
+            "foreground": "#f38ba8"
+            }
+        }
+        ]
+    },
+
 
     "terminal.integrated.fontFamily": "'Hack', 'Symbols Nerd Font', monospace",
     "terminal.integrated.shellIntegration.decorationsEnabled": "never",
@@ -19,7 +60,7 @@
     "window.menuBarVisibility": "hidden",
     "window.commandCenter": false,
 
-    "workbench.colorTheme": "Vesper Black",
+    "workbench.colorTheme": "One Dark Pro Monokai Darker",
     "workbench.startupEditor": "none",
     "workbench.activityBar.location": "hidden",
     "workbench.layoutControl.enabled": false,
@@ -30,6 +71,14 @@
     "workbench.editor.editorActionsLocation": "hidden",
     "workbench.statusBar.visible": false,
     "workbench.editor.empty.hint": "hidden",
+    "workbench.colorCustomizations": {
+        "editor.background": "#000000",
+        "sideBar.background": "#000000",
+        "activityBar.background": "#000000",
+        "statusBar.background": "#000000",
+        "titleBar.activeBackground": "#000000",
+        "terminal.background": "#000000"
+    },
 
     "zenMode.showTabs": "none",
     "chat.titleBar.openInAgentsWindow.enabled": false,
