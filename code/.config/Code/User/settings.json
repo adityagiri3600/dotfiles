@@ -7,6 +7,7 @@
     "editor.fontFamily": "'Hack', 'Symbols Nerd Font', monospace",
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.horizontal": "hidden",
+    "editor.parameterHints.enabled": false,
     "editor.tokenColorCustomizations": {
         "textMateRules": [
         {
