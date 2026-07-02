@@ -93,6 +93,7 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "git.confirmSync": false,
     "github.copilot.enable": {
         "*": false,
         "plaintext": false,
