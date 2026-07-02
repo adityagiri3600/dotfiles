@@ -89,6 +89,17 @@
     "explorer.confirmDelete": false,
     "swift.path": "/usr/lib64/swift-6.3.2/usr/bin",
 
+
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+
     "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true,
     "code-runner.showExecutionMessage": false,
